@@ -47,11 +47,27 @@ img{
     height: auto;
 }
 .section-title{
+    position: relative;
     font-weight: 700;
     font-size: 90px;
     line-height: 116px;
     text-transform: uppercase;
     color: inherit;
+    z-index: 2;
+}
+.section-title span{
+    position: absolute;
+    color: transparent;
+    font-weight: 500;
+    font-size: 269px;
+    line-height: 315px;
+    -webkit-text-stroke: 4px #303030;
+    text-stroke: 4px #303030;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
 }
 
 /*Header*/
@@ -136,6 +152,12 @@ img{
     background-size: auto 90%;
     color: #FFFFFF;
 }
+.intro .section-title span{
+    left: -128px;
+    bottom: 30px;
+    -webkit-text-stroke: 4px #ffffff;
+    text-stroke: 4px #ffffff;
+}
 .intro__inner{
     margin-left: 200px;
 }
@@ -163,9 +185,15 @@ img{
 .why{
     padding-top: 103px;
     padding-bottom: 140px;
+    background: #fff url('../img/why/why_bg.svg') center bottom no-repeat;
+    background-size: contain;
 }
 .why .section-title{
     margin-left: 185px;
+}
+.why .section-title span{
+    left: -128px;
+    bottom: 0;
 }
 .why__items{
     display: flex;
@@ -180,6 +208,7 @@ img{
     width: 100%;
     max-width: 488px;
     margin: 0 37px;
+    background-color: #fff;
 }
 .why-item__icon{
     display: flex;
@@ -219,12 +248,46 @@ img{
 /*For*/
 /*Functionality*/
 /*Benefits*/
+.benefits{
+    padding-top: 106px;
+    padding-bottom: 316px;
+    background: #EBEBEB url('../img/benefits/benefits_bg.svg') center left no-repeat;
+}
+.benefits .section-title span{
+    left: -122px;
+    bottom: -40px;
+}
+.benefits__container{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1660px;
+}
+.benefits__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.benefits-list{
+    max-width: 682px;
+    margin-top: 79px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.benefits-list__item:not(:last-child){
+    margin-bottom: 50px;
+}
 /*Team*/
 .team{
     padding-top: 92px;
 }
 .team .section-title{
     margin-left: 275px;
+}
+.team .section-title span{
+    left: -156px;
+    bottom: -60px;
 }
 .team__items{
     display: flex;
@@ -256,3 +319,46 @@ img{
     text-transform: uppercase;
 }
 /*Contacts*/
+.contacts{
+    display: flex;
+    justify-content: flex-end;
+    padding: 292px 15px 161px 15px;
+    background: transparent url('../img/contacts/contacts_bg.svg') center left no-repeat;
+    background-size: contain;
+}
+.contacts .section-title{
+    margin-left: 90px;
+}
+.contacts .section-title span{
+    left: -108px;
+    bottom: -42px;
+    color: #ffffff;
+}
+.contacts__container{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1372px;
+}
+.contacts__box{
+    width: 100%;
+    max-width: 538px;
+    margin-top: 40px;
+    padding: 65px 66px 61px 66px;
+    background-color: #303030;
+    color: #ffffff;
+}
+.contacts__title{
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.contacts__text{
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 26px;
+}
+.contacts__text:last-child{
+    margin-top: 9px;
+}
