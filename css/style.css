@@ -246,6 +246,86 @@ img{
     border-left: 45px solid transparent;
 }
 /*For*/
+.for{
+    position: relative;
+    padding-top: 79px;
+    background: #B8B8B8 url('../img/for/poly2.svg') top right no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.for__bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -200px;
+    left: 0;
+    background: transparent url('../img/for/servers.png') bottom center no-repeat;
+    background-size: cover;
+}
+.for__container{
+    max-width: 1272px;
+}
+.for .section-title{
+    color: #ffffff;
+}
+.for .section-title span{
+    left: -146px;
+    bottom: -83px;
+    -webkit-text-stroke: 4px #ffffff;
+    text-stroke: 4px #ffffff;
+}
+.for__subtitle{
+    max-width: 560px;
+    margin-top: 20px;
+    margin-left: 137px;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.for__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 780px;
+    margin: 279px auto 0 auto;
+}
+.for__icon{
+    margin-bottom: 19px;
+}
+.for__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 35px 43px 38px 43px;
+    background-color: #303030;
+    text-align: center;
+}
+.for__title{
+    max-width: 580px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FAF8F8;
+}
+.for__divider{
+    width: 100px;
+    height: 2px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+    background-color: #fff;
+}
+.for__text:not(:last-child){
+    margin-bottom: 9px;
+}
+.for__text{
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
 /*Functionality*/
 /*Benefits*/
 .benefits{
