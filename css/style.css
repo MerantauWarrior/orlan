@@ -112,6 +112,12 @@ img{
     margin-left: 58px;
     margin-right: 34px;
 }
+.navigation__collector{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .header__logo{
     position: absolute;
     top: -65px;
@@ -171,6 +177,7 @@ img{
     color: #ffffff;
 }
 .btn-intro{
+    display: inline-block;
     padding: 21px 30px;
     font-size: 34px;
     line-height: 40px;
@@ -327,6 +334,16 @@ img{
     color: #FFFFFF;
 }
 /*Functionality*/
+.functionality{
+    padding-top: 71px;
+}
+.functionality .section-title{
+    margin-left: 175px;
+}
+.functionality .section-title span{
+    left: -144px;
+    bottom: -72px;
+}
 /*Benefits*/
 .benefits{
     padding-top: 106px;
@@ -400,8 +417,6 @@ img{
 }
 /*Contacts*/
 .contacts{
-    display: flex;
-    justify-content: flex-end;
     padding: 292px 15px 161px 15px;
     background: transparent url('../img/contacts/contacts_bg.svg') center left no-repeat;
     background-size: contain;
@@ -441,4 +456,234 @@ img{
 }
 .contacts__text:last-child{
     margin-top: 9px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1919px){
+    .section-title{
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .section-title span{
+        font-size: 200px;
+        line-height: 200px;
+    }
+    /*Header*/
+    .header__logo{
+        max-width: 100px;
+        top: -15px;
+    }
+    .navigation{
+        margin-left: 34px;
+    }
+    .menu{
+        margin-left: 100px;
+    }
+    .menu__item{
+        margin-left: 30px;
+    }
+    /*Intro*/
+    .intro__inner{
+        margin-left: 150px;
+    }
+    .intro .section-title span {
+        left: -100px;
+        bottom: 40px;
+    }
+    /*Team*/
+    .team .section-title span {
+        left: -116px;
+        bottom: -32px;
+    }
+    /*Benefits*/
+    .benefits .section-title span {
+        left: -90px;
+        bottom: -12px;
+    }
+}
+@media all and (max-width: 1023px){
+    .section-title{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .section-title span{
+        position: static;
+        font-size: 90px;
+        line-height: 70px;
+    }
+    /*Header*/
+    .header-top{
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .header__logo{
+        position: static;
+        max-width: 80px;
+    }
+    .navigation{
+        margin: 0;
+        padding: 15px;
+    }
+    .menu{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .menu__item{
+        margin: 0 15px;
+    }
+    .menu__item:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .socials{
+        margin-top: 30px;
+        margin-left: 0;
+        padding: 0;
+    }
+    /*Intro*/
+    .intro{
+        padding: 60px 15px;
+        background: #B8B8B8;
+    }
+    .intro .section-title span {
+        -webkit-text-stroke: 1px #ffffff;
+        text-stroke: 1px #ffffff;
+    }
+    .intro__inner{
+        margin-left: 0;
+    }
+    .intro__text {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .btn-intro {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /*Why*/
+    .why{
+        padding: 60px 15px;
+    }
+    .why .section-title{
+        margin-left: 0;
+    }
+    .why__items{
+        margin-top: 20px;
+    }
+    .why-item{
+        margin: 40px auto 0 auto;
+    }
+    .why-item__title{
+        min-height: auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .why-item__description{
+        padding: 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    /*For*/
+    .for{
+        padding: 60px 15px;
+        background: #B8B8B8;
+    }
+    .for__bg{
+        display: none;
+    }
+    .for .section-title span {
+        -webkit-text-stroke: 1px #ffffff;
+        text-stroke: 1px #ffffff;
+    }
+    .for__subtitle{
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .for__inner{
+        margin-top: 40px;
+    }
+    .for__box{
+        padding: 20px;
+    }
+    .for__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .for__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    /*Functionality*/
+    .functionality{
+        padding: 60px 15px;
+    }
+    .functionality .section-title {
+        margin-left: 0;
+    }
+    /*Benefits*/
+    .benefits{
+        padding: 60px 15px;
+        background: #EBEBEB;
+    }
+    .benefits__container{
+        justify-content: flex-start;
+    }
+    .benefits__inner{
+        align-items: flex-start;
+    }
+    .benefits-list{
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .benefits-list__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    /*Team*/
+    .team{
+        padding: 60px 15px;
+    }
+    .team .section-title{
+        margin-left: 0;
+    }
+    .team__items{
+        margin: 40px auto 0 auto;
+    }
+    .team-item{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .team-item__icon{
+        min-width: 80px;
+        max-width: 80px;
+    }
+    .team-item__text {
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    /*Contacts*/
+    .contacts{
+        padding: 60px 15px;
+        background: #ffffff;
+    }
+    .contacts__container{
+        justify-content: flex-start;
+    }
+    .contacts__container > div{
+        width: 100%;
+    }
+    .contacts .section-title{
+        margin-left: 0;
+    }
+    .contacts__box{
+        padding: 30px;
+        max-width: 100%;
+    }
+    .contacts__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
