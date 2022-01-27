@@ -2,10 +2,13 @@ $( document ).ready(function() {
     var mql = window.matchMedia('(min-width: 1368px)').matches;
     $(window).on('scroll', function () {
         if (mql){
+            var pos = $('.for__bg').offset().top;
             var st = $(this).scrollTop();
-            document.querySelector(".for__bg").style.transform = `scale(${1 + st*0.0002})`;
+            if (st > pos-800){
+                $('.for__bg').css('transform', 'scale('+ parseFloat(1 + st*0.0002) +')');
+            }
         }else {
-            document.querySelector(".for__bg").style.transform = `scale(1)`;
+            $('.for__bg').css('transform', 'scale(1)');
         }
     });
     if (!mql){

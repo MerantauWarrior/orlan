@@ -103,6 +103,7 @@ img{
     text-transform: uppercase;
     color: #B8B8B8;
 }
+.side-menu__link:hover,
 .side-menu__link_active{
     color: #303030;
 }
