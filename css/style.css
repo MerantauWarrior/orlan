@@ -103,7 +103,7 @@ img{
     color: #B8B8B8;
 }
 .side-menu__link:hover,
-.side-menu__link_active{
+.side-menu__link.active{
     color: #303030;
 }
 .cube {
@@ -204,7 +204,7 @@ img{
     color: #ffffff;
 }
 .menu__link:hover,
-.menu__link_active{
+.menu__link.active{
     color: #E7AC1F;
 }
 .socials{

@@ -28,4 +28,15 @@ $( document ).ready(function() {
         $('.side').toggleClass('side_active');
     });
 
+    // menu
+    $('.js-menu').click(function (e) {
+        e.preventDefault();
+        var to = $(this).attr('href');
+        $('.js-menu').removeClass('active');
+        $('.js-menu[href="'+to+'"]').addClass('active');
+        $('html, body').animate({
+            scrollTop: $(to).offset().top
+        }, 600);
+    });
+
 });
