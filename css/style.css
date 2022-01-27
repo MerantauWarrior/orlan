@@ -71,7 +71,6 @@ img{
 }
 
 /*Cube*/
-
 .side {
     display: flex;
     flex-direction: column;
@@ -136,8 +135,6 @@ img{
 .cube__face--left   { transform: rotateY(-90deg) translateZ(30px); }
 .cube__face--top    { transform: rotateX( 90deg) translateZ(30px);}
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(30px);}
-
-
 /*Header*/
 .header{
     background-color: #303030;
@@ -693,6 +690,18 @@ img{
         left: -108px;
         bottom: -40px;
     }
+    .functionality-item_active .functionality-item__title{
+        position: static;
+        margin-bottom: 30px;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .functionality__items_active:before{
+        display: none;
+    }
     /*Benefits*/
     .benefits{
         padding-left: 30px;
@@ -719,6 +728,22 @@ img{
         font-size: 90px;
         line-height: 70px;
     }
+    /*Cube*/
+    .side{
+        bottom: 15px;
+        right: 15px;
+    }
+    .cube__face{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #303030;
+    }
+    .cube__face--front  { transform: rotateY(  0deg) translateZ(20px); }
+    .cube__face--right  { transform: rotateY( 90deg) translateZ(20px); }
+    .cube__face--back   { transform: rotateY(180deg) translateZ(20px); }
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(20px); }
+    .cube__face--top    { transform: rotateX( 90deg) translateZ(20px);}
+    .cube__face--bottom { transform: rotateX(-90deg) translateZ(20px);}
     /*Header*/
     .header-top{
         flex-direction: column;
@@ -897,6 +922,35 @@ img{
     }
     .functionality .section-title {
         margin-left: 0;
+    }
+    .functionality__items{
+        margin-top: 60px;
+        padding: 0;
+    }
+    .functionality-item__title{
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .functionality-item__text {
+        padding: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .functionality-item_active .functionality-item__title{
+        position: static;
+        margin-bottom: 30px;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .functionality__items_active:before{
+        display: none;
+    }
+    .functionality-item:not(:last-child) {
+        margin-bottom: 15px;
     }
     /*Benefits*/
     .benefits{
