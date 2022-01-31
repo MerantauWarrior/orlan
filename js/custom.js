@@ -22,6 +22,9 @@ $(document).ready(function () {
         $('.cube').click(function () {
             $('.side').toggleClass('side_active');
         });
+        $('.side-menu').on('mouseleave', function () {
+            $('.side').removeClass('side_active');
+        })
     }
 
     $('.functionality-item__title').click(function () {
