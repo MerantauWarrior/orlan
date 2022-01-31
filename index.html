@@ -28,13 +28,14 @@
 
 <header class="header">
   <div class="header-top">
-    <div class="header-top__item">Орлан – Офлайн система класса Data-Centric Audit and Protection (DCAP) /Data Access
-      Governance (DAG) Система мониторинга, контроля, инвентаризации/классификации и защиты неструктурированных данных
-      (файловых хранилищах)
-    </div>
-    <div class="header-top__item"><img src="img/gerb_russia.svg" alt="gerb"></div>
-    <div class="header-top__item">Единый реестр российских программ для электронных вычислительных машин и баз данных
-    </div>
+<!--    <div class="header-top__item">Орлан – Офлайн система класса Data-Centric Audit and Protection (DCAP) /Data Access-->
+<!--      Governance (DAG) Система мониторинга, контроля, инвентаризации/классификации и защиты неструктурированных данных-->
+<!--      (файловых хранилищах)-->
+<!--    </div>-->
+<!--    <div class="header-top__item"><img src="img/gerb_russia.svg" alt="gerb"></div>-->
+<!--    <div class="header-top__item">Единый реестр российских программ для электронных вычислительных машин и баз данных-->
+<!--    </div>-->
+    <div class="header-top__item">ОРЛАН - Система мониторинга<br>и инвентаризации it данных</div>
   </div>
   <nav class="navigation">
     <a href="#" class="header__logo"><img src="img/logo.svg" alt="orlan slogan"></a>
@@ -64,11 +65,11 @@
 <main>
   <div class="side">
     <ul class="side-menu">
-      <li class="side-menu__item"><a href="#team" class="side-menu__link js-menu">команда</a></li>
-      <li class="side-menu__item"><a href="#benefits" class="side-menu__link js-menu">выгоды</a></li>
-      <li class="side-menu__item"><a href="#functionality" class="side-menu__link js-menu">функционал</a></li>
-      <li class="side-menu__item"><a href="#for" class="side-menu__link js-menu">для чего</a></li>
       <li class="side-menu__item"><a href="#why" class="side-menu__link js-menu">зачем</a></li>
+      <li class="side-menu__item"><a href="#for" class="side-menu__link js-menu">для чего</a></li>
+      <li class="side-menu__item"><a href="#functionality" class="side-menu__link js-menu">функционал</a></li>
+      <li class="side-menu__item"><a href="#benefits" class="side-menu__link js-menu">выгоды</a></li>
+      <li class="side-menu__item"><a href="#team" class="side-menu__link js-menu">команда</a></li>
     </ul>
     <div class="cube">
       <div class="cube__face cube__face--front"></div>
@@ -84,7 +85,7 @@
       <h2 class="section-title"><span>В</span>аши данные<br> в безопасности, всегда!</h2>
       <p class="intro__text">Орлан позволяет эффективно выполнять стоящие перед Компанией задачи, не отвлекаясь на
         рутинные вопросы защиты конфиденциальной информации.</p>
-      <a href="#" class="btn-intro">запросить демо-версию</a>
+      <a href="#" class="btn-intro" data-modal="consultation">запросить демо-версию</a>
     </div>
   </section>
   <section class="why" id="why">
@@ -235,17 +236,34 @@
         <div class="contacts__box">
           <img src="img/contacts/white.svg" alt="orlan">
           <h3 class="contacts__title">Акционерное общество «Инновации безопасности»</h3>
-          <p class="contacts__text">123060 г. Москва, ул. Маршала<br> Рыбалко 2, корп.6, пом. 663.1</p>
-          <p class="contacts__text">tel: +79261234567<br>info@orlan.ru</p>
+          <p class="contacts__text">123060 г. Москва, ул. Маршала<br>Рыбалко 2, корп.6, пом. 663.1</p>
+          <p class="contacts__text">tel: <a href="tel:+74955404955">+7(495)540-49-55</a><br><a
+              href="mailto:support@orlansec.ru">support@orlansec.ru</a></p>
         </div>
       </div>
     </div>
   </section>
 </main>
 
+<div class="overlay">
+  <div class="modal" id="consultation">
+    <div class="modal__close">&times;</div>
+    <div class="modal__subtitle">Запросить демо-версию</div>
+    <form class="feed-form feed-form--mt25" action="#">
+      <input name="name" required placeholder="Ваше имя" type="text">
+      <input name="phone" required placeholder="Ваш телефон" type="tel">
+      <input name="email" required placeholder="Ваш E-mail" type="email">
+      <button class="button button__submit">
+        ПОДТВЕРДИТЬ
+      </button>
+    </form>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
