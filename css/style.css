@@ -357,7 +357,7 @@ img{
 /*For*/
 .for{
     position: relative;
-    padding-top: 103px;
+    padding-top: 133px;
     background: #B8B8B8 url('../img/for/poly2.svg') top right no-repeat;
     background-size: contain;
     overflow: hidden;
@@ -437,7 +437,7 @@ img{
 }
 /*Functionality*/
 .functionality{
-    padding-top: 103px;
+    padding-top: 147px;
     padding-bottom: 129px;
     background: #fff url('../img/functionality/bg.svg') bottom center no-repeat;
     overflow: hidden;
@@ -460,7 +460,7 @@ img{
 .functionality__items:before{
     content: "";
     position: absolute;
-    top: -350px;
+    top: -400px;
     right: 0;
     bottom: -129px;
     left: 0;
@@ -573,7 +573,7 @@ img{
 }
 /*Benefits*/
 .benefits{
-    padding-top: 106px;
+    padding-top: 176px;
     padding-bottom: 316px;
     background: #EBEBEB url('../img/benefits/benefits_bg.svg') center left no-repeat;
 }
@@ -619,7 +619,7 @@ img{
 }
 /*Team*/
 .team{
-    padding-top: 103px;
+    padding-top: 156px;
 }
 .team .section-title{
     margin-left: 275px;
