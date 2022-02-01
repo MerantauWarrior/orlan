@@ -87,16 +87,15 @@ img{
     width: 220px;
     max-width: 60px;
     max-height: 60px;
-    /*margin-bottom: 30px;*/
     background-color: #fff;
     border: 2px solid #303030;
+    transition: all 0.25s;
     overflow: hidden;
 }
 .side_active .side-menu{
     max-width: 220px;
     max-height: 251px;
     padding: 20px 50px 20px 20px;
-    transition: all 0.25s;
     z-index: 2;
 }
 .side-menu__item:not(:last-child){
@@ -150,6 +149,12 @@ img{
 .side_active .cube,
 .cube:hover{
     transform: rotateX(0deg) rotateY(180deg);
+}
+.side_closing .cube{
+    transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
 }
 .cube__face {
     position: absolute;
@@ -352,7 +357,7 @@ img{
 /*For*/
 .for{
     position: relative;
-    padding-top: 79px;
+    padding-top: 103px;
     background: #B8B8B8 url('../img/for/poly2.svg') top right no-repeat;
     background-size: contain;
     overflow: hidden;
@@ -432,7 +437,7 @@ img{
 }
 /*Functionality*/
 .functionality{
-    padding-top: 71px;
+    padding-top: 103px;
     padding-bottom: 129px;
     background: #fff url('../img/functionality/bg.svg') bottom center no-repeat;
     overflow: hidden;
@@ -597,9 +602,24 @@ img{
 .benefits-list__item:not(:last-child){
     margin-bottom: 50px;
 }
+.benefits-list__item{
+    position: relative;
+}
+.benefits-list__item:before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -42px;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #303030;
+}
 /*Team*/
 .team{
-    padding-top: 92px;
+    padding-top: 103px;
 }
 .team .section-title{
     margin-left: 275px;
@@ -1159,6 +1179,17 @@ button {
     }
     .benefits-list__item:not(:last-child) {
         margin-bottom: 20px;
+    }
+    .benefits-list__item{
+        margin-left: 20px;
+    }
+    .benefits-list__item:before{
+        content: '';
+        top: 6px;
+        left: -20px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #303030;
     }
     /*Team*/
     .team{
