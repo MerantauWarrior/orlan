@@ -178,12 +178,14 @@ img{
     color: #ffffff;
 }
 .header-top{
-    display: flex;
-    justify-content: flex-end;
     padding: 14px 12px;
     background-color: #232323;
     font-size: 14px;
     line-height: 16px;
+}
+.header-top__inner{
+    display: flex;
+    justify-content: flex-end;
 }
 .header-top__item{
     padding-left: 16px;
@@ -937,6 +939,97 @@ button {
         display: none;
     }
 }
+@media (min-width: 1920px) {
+    .header-top__inner{
+        max-width: 1896px;
+        margin: 0 auto;
+    }
+    .navigation{
+        max-width: 1806px;
+        margin: 0 auto;
+    }
+    .intro__inner{
+        max-width: 1520px;
+        margin: 0 auto;
+    }
+    .why{
+        background-size: cover;
+    }
+    .why .section-title{
+        max-width: 1806px;
+        padding-left: 128px;
+        margin: 0 auto;
+    }
+    .why .section-title span{
+        left: 0;
+    }
+    .functionality .section-title{
+        max-width: 1570px;
+        margin: 0 auto;
+    }
+    .benefits {
+        background: #EBEBEB url(../img/benefits/benefits_bg.svg) center no-repeat;
+    }
+    .team .section-title{
+        max-width: 1370px;
+        margin: 0 auto;
+    }
+    .contacts {
+        background: transparent url(../img/contacts/contacts_bg.svg) center center no-repeat;
+    }
+}
+@media all and (min-width: 991px) and  (max-width: 1919px) {
+    .team-item{
+        max-width: 30%;
+        margin-left: 1.5% !important;
+        margin-right: 1.5% !important;
+    }
+    .why-item {
+        max-width: 30%;
+        margin: 0 1.5%;
+    }
+    .why-item:not(:last-child){
+        margin-bottom: 0;
+    }
+    .why-item__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media all and (min-width: 991px) and  (max-width: 1560px) {
+    .team__items {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .team-item{
+        padding: 20px;
+    }
+    .team-item__icon {
+        min-width: 80px;
+    }
+    .team-item__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+@media all and (min-width: 991px) and (max-width: 1366px) {
+    .why .section-title span {
+        left: -105px;
+        bottom: auto;
+        top: -36px;
+    }
+}
+@media all and (min-width: 991px) and  (max-width: 1152px) {
+    .contacts__box {
+        max-width: 438px;
+        margin-right: 60px;
+        padding: 30px;
+    }
+    .contacts__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
 @media all and (max-width: 1023px){
     .section-title{
         font-size: 36px;
@@ -949,9 +1042,11 @@ button {
     }
     /*Header*/
     .header-top{
-        flex-direction: column;
         font-size: 12px;
         line-height: 14px;
+    }
+    .header-top__inner{
+        flex-direction: column;
     }
     .header__logo{
         max-width: 80px;
